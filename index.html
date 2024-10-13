@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Hipótesis</title>
+	
+	<meta name="description" content="Hipótesis">
+	<meta name="author" content="SCI México - Ricardo H. Oscar B.">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script type="text/javascript" src="js/easeljs-0.7.1.min.js"></script>
+	<script type="text/javascript" src="js/tweenjs-0.5.1.min.js"></script>
+	<script type="text/javascript" src="js/movieclip-0.7.1.min.js"></script>
+	
+	<script type="text/javascript" src="js/particulas.js"></script>
+	<script type="text/javascript" src="js/Liquidos_1.js"></script>
+	<script type="text/javascript" src="js/Liquidos_2.js"></script>
+	<script type="text/javascript" src="js/solidos.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="content">
+			<ul id="menu">
+				<li id="b1"></li>
+				<li id="b2"></li>
+				<li id="b3"></li>
+			</ul>
+			<div id="container">
+				
+				<div id="splash" class="section">
+					<span>La teoria cineticomolecular es basa en quatre hipòtesis que expliquen el comportament dels gasos a partir del moviment de les seues partícules. Aquesta teoria també es pot utilitzar per als sòlids i els líquids.</span>
+				</div>
+				
+				<div id="gases" class="section">
+					<div class="animation">
+						<canvas id="canvas1" width="504" height="345"></canvas>
+						<div id="gases_modal">
+							<div id="gases_modal_close"></div>
+							<div id="gases_modal_txt"><span>Les quatre hipòtesis de la teoria cinètica per als gasos són:<ul>
+								<li>Tots els gasos estan formats per un <b>gran nombre de partícules</b> tan petites que no arriben a veure’s amb el microscopi.</li>
+								<li>Aquestes partícules ocupen un <b>espai molt petit</b> comparat amb el volum del recipient que les conté.</li>
+								<li>Les partícules estan en continu <b>moviment caòtic</b> xocant les unes amb les altres i contra les parets del recipient. En aquestes col·lisions, les partícules no perden energia.</li>
+								<li>El moviment de les partícules està determinat per dos tipus de forces: unes <b>d’atractives</b>, que tendeixen a mantenir-les unides, i d’altres de <b>repulsives</b>, que tendeixen a allunyar-les.</li>
+								</ul><span></div>
+						</div>
+					</div>
+					<div class="description">
+						<p>Les partícules es mantenen molt allunyades les unes de les altres perquè les forces que les uneixen són molt dèbils. Les partícules es mouen amb absoluta llibertat en totes les direccions i xoquen constantment contra les parets del recipient que les conté.</p>
+						<div id="gases_modal_trigger"></div>
+					</div>
+				</div>
+				
+				<div id="liquidos" class="section">
+					<div class="animation">
+						<div id="liq_s1" title="Continua"></div>
+						<canvas id="canvas2" width="504" height="345"></canvas>
+					</div>
+					<div class="description">
+						<p>Les partícules es troben molt pròximes i hi ha petits buits entre aquestes. Les partícules es troben unides per forces més dèbils que les dels sòlids.</p>
+					</div>
+				</div>
+				
+				<div id="liquidos_b" class="section">
+					<div class="animation">
+						<div id="liq_s2" title="Reiniciar"></div>
+						<canvas id="canvas3" width="504" height="345"></canvas>
+					</div>
+					<div class="description">
+						<p>Com a conseqüència de la debilitat de les forces que uneixen les partícules, aquestes llisquen les unes sobre les altres de manera que el líquid pot moure’s amb llibertat adaptant-se a les parets del recipient que el conté.</p>
+					</div>
+				</div>
+				
+				<div id="solidos" class="section">
+					<div class="animation">
+						<canvas id="canvas4" width="504" height="345"></canvas>
+					</div>
+					<div class="description">
+						<p>Les partícules es troben molt pròximes les unes de les altres, tot i que hi ha petits buits entre aquestes. Les forces de cohesió mantenen les partícules en posicions fixes respecte a les que vibren lleugerament.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
